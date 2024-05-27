@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import DirectionTest from './pages/DirectionTest'
+import WrapTest from './pages/WrapTest'
+import MinMaxTest from './pages/MinMaxTest'
+import JustifyCenterTest from './pages/JustifyCenterTest'
+import AlignTest from './pages/AlignTest'
+import User from './pages/User'
+import UserContainer from './pages/UserContainer'
+import Card from './pages/Card'
+import CardContainer from './pages/CardContainer'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main>
+      <DirectionTest />
+      <WrapTest />
+      <MinMaxTest />
+      <JustifyCenterTest />
+      <AlignTest />
+      {/* <User /> */}
+      <UserContainer />
+      {/* <Card /> */}
+      <CardContainer />
+    </main>
+  )
 }
-
-export default App;
